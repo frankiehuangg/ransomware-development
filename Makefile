@@ -1,4 +1,4 @@
-PDF_OUT := dist/Ransomware.pdf
+PDF_OUT := dist/paper.pdf
 
 watch: init
 	typst watch main.typ $(PDF_OUT)

@@ -19,18 +19,32 @@
     email: "13521092@std.stei.itb.ac.id",
   ),
   (
+    name: "Muhammad Haidar Akita Tresnadi",
+    department: "School of Electrical Engineering and Informatics",
+    organization: "Bandung Institute of Technology",
+    location: "Bandung, Indonesia",
+    email: "13521025@std.stei.itb.ac.id",
+  ),
+  (
+    name: "Moch. Sofyan Firdaus",
+    department: "School of Electrical Engineering and Informatics",
+    organization: "Bandung Institute of Technology",
+    location: "Bandung, Indonesia",
+    email: "13521083@std.stei.itb.ac.id",
+  ),
+  (
     name: "Robithoh Annur, S.T., M.Eng., Ph.D.",
     department: "School of Electrical Engineering and Informatics",
     organization: "Bandung Institute of Technology",
     location: "Bandung, Indonesia",
-    email: "TODO",
+    email: "robithoh.a@itb.ac.id",
   ),
   (
     name: "Prof. Dr. Suhardi, M.T.",
     department: "School of Electrical Engineering and Informatics",
     organization: "Bandung Institute of Technology",
     location: "Bandung, Indonesia",
-    email: "TODO",
+    email: "suhardi@itb.ac.id",
   ),
 )
 

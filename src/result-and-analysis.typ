@@ -24,23 +24,23 @@ In this experiment, the crypto-ransomware program was executed across five diffe
   #figure(
     table(
       fill: (_, y) => if y == 0 { luma(180) },
-      columns: 4,
+      columns: 5,
       inset: 4pt,
       align: center,
-      table.header("Antivirus", "Detection Rate", "Encrypted File Count", "Avg Exec Time (ms)"),
-      [Windows Defender], [100%], [128], [18918],
-      [Norton AntiVirus Plus], [0%], [16], [31537],
-      [McAfee Antivirus], [100%], [128], [17188],
-      [Malwarebytes Premium Security], [0%], [4.42], [11606],
-      [Avast Premium Security], [0%], [0], [-],
+      table.header("Antivirus", "Detection Rate", "Encrypted File Count", "Avg Exec Time (ms)", "Std Dev (Pooled)"),
+      [Windows Defender], [100%], [128], [18918], [280],
+      [Norton], [0%], [16], [31537], [8926],
+      [McAfee], [100%], [128], [17188], [97],
+      [Malwarebytes], [0%], [4.42], [11606], [5057],
+      [Avast], [0%], [0], [-], [-]
     ),
     caption: [Antivirus Resilience and Efficiency Testing Result],
   )
 ]
 
-The complete record of the experiments is provided in Appendix A, and a summary of the encryption process effectiveness is presented in Table II. Overall, the results of the three configurations, along with variations in encryption techniques, suggest that configuration choice had little impact on antivirus performance, with outcomes being more dependent on the specific antivirus program used.
+The summary of the encryption process effectiveness is presented in Table II. Overall, the results of the three configurations, along with variations in encryption techniques, suggest that configuration choice had little impact on antivirus performance, with outcomes being more dependent on the specific antivirus program used.
 
-Moving on to antivirus testing, the results showed that both Windows Defender and McAfee Antivirus failed to detect the ransomware, allowing it to encrypt all files. The average execution time on McAfee (17,188 ms) was slightly faster than on Windows Defender (18,918 ms). In contrast, testing on three other antivirus products—Norton AntiVirus Plus, Malwarebytes Premium Security, and Avast Premium Security—successfully detected the ransomware.
+Moving on to antivirus testing, the results showed that both Windows Defender and McAfee Antivirus failed to detect the ransomware, allowing it to encrypt all files. The average execution time on McAfee (17,188 ms) was slightly faster than on Windows Defender (18,918 ms), with reasonably small standard deviations across multiple different configurations. In contrast, testing on three other antivirus products—Norton AntiVirus Plus, Malwarebytes Premium Security, and Avast Premium Security—successfully detected the ransomware.
 
 Norton AntiVirus Plus only detected ransomware activity after 16 files had been encrypted, all of which were located in the Downloads folder. When all target files were placed in Downloads, Norton failed to detect the ransomware entirely until encryption was complete. However, when files were moved to other folders, Norton was able to block the ransomware before any encryption occurred. This suggests that Norton's detection relies less on behavioral monitoring and more on directory-specific file monitoring. It should be noted, however, that Norton allows users to manually add additional directories for protection. On average, the execution time needed for the antivirus to detect the attack is 31537 ms, which is significantly longer than other antiviruses. This happens because Norton will asks for user input to quarantine the program if it is detected as malicious. Disregarding this popup will give an average runtime at around 4 seconds.
 

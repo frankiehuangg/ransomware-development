@@ -12,14 +12,4 @@ To answer this, we propose simulating zero-day crypto-ransomware attacks on pers
 
 In this study, the development of ransomware is limited to its crypto-ransomware component. The overall testing process is conducted under the assumption that the initial access and execution phase happens through social engineering techniques, therefore it is regarded to be beyond the scope of this research. All testing is carried out on the Windows 11 Pro operating system.
 
-The structure of this paper is organized as follows.
-
-Chapter II presents the theoretical foundations relevant to this research, which discusses the concept of ransomware along with the typical stages of an attack, the architecture of the Windows operating system and how malicious programs utilize the Windows API, the fundamental principles of cryptography including the types of algorithms commonly employed, as well as malware analysis techniques, which consist of static analysis, dynamic analysis, and hybrid analysis.
-
-Chapter III introduces the proposed solution, which involves the development of a crypto-ransomware employing various combinations of data encryption techniques to evaluate the resilience of antivirus programs.
-
-Chapter IV explains the experimental design, which includes the configuration of the testing environment and the setup of the virtual machines used to run the experiments. This chapter also describes the controlled execution of the developed crypto-ransomware, the procedures for monitoring system behavior, and the steps taken to ensure reproducibility and safety during testing.
-
-Chapter V introduces the evaluation metrics and presents the test results, followed by an analysis of the findings. This analysis focuses on the effectiveness and resilience of each antivirus program against ransomware attacks, as well as the impact of different data encryption techniques.
-
-Chapter VI concludes this paper by summarizing the key research findings and offering recommendations for future work in the field of cybersecurity, particularly in improving the effectiveness of detection and mitigation strategies against emerging ransomware variants.
+The rest of this paper is organized as follows: Section II reviews the relevant literature mentioned in this study, Section III introduces the proposed solution, Section IV details the experimental setup, Section V present the results and discussion followed by the concluding remarks in Section VI.
