@@ -32,7 +32,7 @@ The Windows operating system consists of two distinct modes: user mode and kerne
 
 The Win32 API (Windows API) is a collection of functions created by Microsoft for native C/C++ Windows applications that require direct access to the Windows operating system and hardware (Stevewhims). The provided APIs can be categorized into five distinct groups: access to kernel objects, sharing objects between processes, process management, inter-process communication, and memory management @silberschatz_galvin_gagne_2018. Several of these APIs are also used to abstract calls to other user-level functions.
 
-== Cryptograhy
+== Cryptography
 
 Cryptography is a method of concealing the contents of a message using various mathematical algorithms. This is done to prevent unauthorized parties from accessing the confidential message. The security level of a cryptographic system depends on the best-known attack methods, meaning that the security of any cryptographic system will inevitably degrade over time. Cryptographic algorithms can be divided into symmetric key cryptography, asymmetric key cryptography, digital signature, and hash functions @hoffstein_2016.
 

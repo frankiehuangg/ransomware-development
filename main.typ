@@ -33,14 +33,14 @@
     email: "13521083@std.stei.itb.ac.id",
   ),
   (
-    name: "Robithoh Annur, S.T., M.Eng., Ph.D.",
+    name: "Robithoh Annur",
     department: "School of Electrical Engineering and Informatics",
     organization: "Bandung Institute of Technology",
     location: "Bandung, Indonesia",
     email: "robithoh.a@itb.ac.id",
   ),
   (
-    name: "Prof. Dr. Suhardi, M.T.",
+    name: "Suhardi",
     department: "School of Electrical Engineering and Informatics",
     organization: "Bandung Institute of Technology",
     location: "Bandung, Indonesia",
